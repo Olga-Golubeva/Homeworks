@@ -1,0 +1,31 @@
+package lecture7_home.method;
+
+public class ArrayValue {
+
+	int arrind0;
+	int arrind1;
+	int arrind2;
+	int arrind3;
+	
+	public ArrayValue(int arrind0, int arrind1, int arrind2, int arrind3) {
+		this.arrind0 = arrind0;
+		this.arrind1 = arrind1;
+		this.arrind2 = arrind2;
+		this.arrind3 = arrind3;
+		
+	}
+	
+	public int getArrInd1() {
+		return arrind0;
+	}
+	public int getArrInd2() {
+		return arrind1;
+	}
+	public int getArrInd3() {
+		return arrind2;
+	}
+	public int getArrInd4() {
+		return arrind3;
+	}
+	
+}
