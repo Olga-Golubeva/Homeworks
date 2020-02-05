@@ -35,18 +35,20 @@ public class TestIntersect {
 		Collections.sort(list2);
 
 		ArrayList<Integer> found = new ArrayList<>();
+		
+		list1.retainAll(list2);
 
-		for (int i = 0; i < list1.size(); i++) {
-			for (int j = i+1; j < list2.size(); j++) {
-				if (list1.get(j) == list2.get(i)) {
+//		for (int i = 0; i < list1.size(); i++) {
+//			for (int j = i+1; j < list2.size(); j++) {
+//				if (list1.get(j) == list2.get(i)) {
 ////			if(list2.equals(list1)) {
 //				if(list1.contains(list2)) continue;
 				
-				found.add(list2.get(j));
+				found.addAll(list1);
 
 					System.out.println(found);
 		}
-			}
+			
 		}
-	}}
+	
 
