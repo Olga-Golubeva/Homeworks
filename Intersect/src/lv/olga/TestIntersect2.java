@@ -3,10 +3,9 @@ package lv.olga;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class TestIntersect {
+public class TestIntersect2 {
 
 	public static void main(String[] args) {
-
 		ArrayList<Integer> list1 = new ArrayList<>();
 		list1.add(1);
 		list1.add(4);
@@ -34,15 +33,28 @@ public class TestIntersect {
 		list2.add(81);
 		Collections.sort(list2);
 
+		System.out.print(list1);
+	
+		System.out.print(list2);
+		
 		ArrayList<Integer> found = new ArrayList<>();
 		
-		list1.retainAll(list2);
+		for (int i = 0; i < list1.size(); i++) {
+			for (int j = i+1; j < list2.size(); j++) {
+				if (list1.get(i) == list2.get(j)){
+					
+				found.add(list1.get(i));
+				}
+			}
+		}
+			System.out.print(found);
 				
-				found.addAll(list1);
+				}
 
-					System.out.println(found);
-		}
+					
+					
+}
+				
 			
-		}
-	
 
+	
