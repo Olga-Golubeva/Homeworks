@@ -1,14 +1,13 @@
 package lv.olga;
 
 import java.util.Arrays;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import lv.olga.test.Options;
 import lv.olga.test.Questions;
 import lv.olga.test.Tips;
 
-public class TestJavaProject {
+public class TestGame {
 
 	public static void main(String[] args) throws Exception {
 		int points = 0;
